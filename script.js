@@ -96,7 +96,7 @@ newGameBtn.addEventListener("click", () => {
   score = 0;
   level = 1;
   lives = 3;
-  numOptions = 6;
+  numOptions = 8;
   updateStats();
   startGame();
 });
@@ -104,7 +104,7 @@ newGameBtn.addEventListener("click", () => {
 easyBtn.addEventListener("click", () => {
   easyBtn.classList.add("active");
   hardBtn.classList.remove("active");
-  numOptions = 3;
+  numOptions = 4;
   startGame();
 });
 
