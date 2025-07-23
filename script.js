@@ -19,7 +19,7 @@ let score = 0;
 let highScore = 0;
 let lives = 3;
 let level = 1;
-let numOptions = 4;
+let numOptions = 6;
 let colorblindMode = false;
 
 function generateRandomNumberBetween(min, max) {
@@ -45,7 +45,7 @@ function gameOver() {
   lives = 3;
   score = 0;
   level = 1;
-  numOptions = 4;
+  numOptions = 6;
   updateStats();
 }
 
@@ -96,7 +96,7 @@ newGameBtn.addEventListener("click", () => {
   score = 0;
   level = 1;
   lives = 3;
-  numOptions = 4;
+  numOptions = 6;
   updateStats();
   startGame();
 });
@@ -104,14 +104,14 @@ newGameBtn.addEventListener("click", () => {
 easyBtn.addEventListener("click", () => {
   easyBtn.classList.add("active");
   hardBtn.classList.remove("active");
-  numOptions = 2;
+  numOptions = 4;
   startGame();
 });
 
 hardBtn.addEventListener("click", () => {
   hardBtn.classList.add("active");
   easyBtn.classList.remove("active");
-  numOptions = 4;
+  numOptions = 6;
   startGame();
 });
 
