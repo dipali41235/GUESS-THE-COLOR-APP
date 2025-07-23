@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Color</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 Guess the Color</h1>
+    <h2 id="color-code">rgb(?, ?, ?)</h2>
+
+    <div class="toggles">
+       <label><input type="checkbox" id="theme-toggle"> 🌙 Dark Mode</label> 
+      <label><input type="checkbox" id="colorblind-toggle"> 🧩 Colorblind Mode</label>
+    </div>
+    
+
+
+    <h4>Score: <span id="score">0</span></h4>
+    <h4>❤️ Lives: <span id="lives">3</span></h4>
+    <h4>🌟 Level: <span id="level">1</span></h4>
+    <div id="message"></div>
+
+    <div class="buttons">
+      <button id="easy" class="difficulty">Easy</button>
+      <button id="hard" class="difficulty active">Hard</button>
+      <button id="new-game">🔁 New Game</button>
+    </div>
+
+    <div id="options-container"></div>
+  </div>
+
+  <audio id="correct-sound" src="correct.mp3"></audio>
+  <audio id="wrong-sound" src="wrong.mp3"></audio>
+  <audio id="win-sound" src="win.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
